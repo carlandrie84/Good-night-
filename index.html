@@ -7,265 +7,268 @@
 <title>Goodnight Chan 🌙</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    min-height: 100vh;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
+body{
+    min-height:100vh;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
     background:
-        radial-gradient(circle at 50% 20%, #263b70, transparent 35%),
-        linear-gradient(160deg, #080d22, #151b3c, #321b46);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        radial-gradient(circle at 50% 20%,#263b70,transparent 35%),
+        linear-gradient(160deg,#080d22,#151b3c,#321b46);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 /* STARS */
 
-.stars {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
 }
 
-.star {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: white;
-    border-radius: 50%;
-    animation: twinkle 2s infinite alternate;
+.star{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 2s infinite alternate;
 }
 
-@keyframes twinkle {
-    from {
-        opacity: .2;
-        transform: scale(.7);
+@keyframes twinkle{
+    from{
+        opacity:.2;
+        transform:scale(.7);
     }
 
-    to {
-        opacity: 1;
-        transform: scale(1.4);
+    to{
+        opacity:1;
+        transform:scale(1.4);
     }
 }
 
 /* MOON */
 
-.moon {
-    position: fixed;
-    top: 10%;
-    right: 12%;
-    width: 90px;
-    height: 90px;
-    background: #fff7c7;
-    border-radius: 50%;
+.moon{
+    position:fixed;
+    top:10%;
+    right:12%;
+    width:90px;
+    height:90px;
+    background:#fff7c7;
+    border-radius:50%;
     box-shadow:
         0 0 30px #fff7c7,
         0 0 80px rgba(255,247,199,.3);
 }
 
-.moon::after {
-    content: "";
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    background: #101633;
-    border-radius: 50%;
-    top: -12px;
-    left: 25px;
+.moon::after{
+    content:"";
+    position:absolute;
+    width:90px;
+    height:90px;
+    background:#101633;
+    border-radius:50%;
+    top:-12px;
+    left:25px;
 }
 
 /* CARD */
 
-.card {
-    width: min(90%, 500px);
-    padding: 45px 25px;
-    text-align: center;
+.card{
+    width:min(90%,500px);
+    padding:45px 25px;
+    text-align:center;
 
-    background: rgba(255,255,255,.10);
-    backdrop-filter: blur(15px);
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(15px);
 
-    border: 1px solid rgba(255,255,255,.2);
-    border-radius: 30px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:30px;
 
-    box-shadow:
-        0 25px 70px rgba(0,0,0,.4);
+    box-shadow:0 25px 70px rgba(0,0,0,.4);
 
-    animation: appear 1.2s ease;
+    animation:appear 1.2s ease;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(40px) scale(.9);
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(40px) scale(.9);
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
     }
 }
 
 /* MOON ICON */
 
-.moon-icon {
-    font-size: 70px;
-    animation: float 3s ease-in-out infinite;
+.moon-icon{
+    font-size:70px;
+    animation:float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-    0%,100% {
-        transform: translateY(0);
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
     }
 
-    50% {
-        transform: translateY(-12px);
+    50%{
+        transform:translateY(-12px);
     }
 }
 
-h1 {
-    margin: 15px 0;
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: clamp(40px, 10vw, 60px);
+h1{
+    margin:15px 0;
+    font-family:Georgia,serif;
+    font-style:italic;
+    font-size:clamp(40px,10vw,60px);
 }
 
-h1 span {
-    color: #ffd6e7;
+h1 span{
+    color:#ffd6e7;
 }
 
-.subtitle {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #e5e7ff;
-    margin-bottom: 25px;
+.subtitle{
+    font-size:18px;
+    line-height:1.7;
+    color:#e5e7ff;
+    margin-bottom:25px;
 }
 
 /* BUTTON */
 
-button {
-    border: none;
-    padding: 15px 28px;
-    border-radius: 50px;
+button{
+    border:none;
+    padding:15px 28px;
+    border-radius:50px;
 
-    background: linear-gradient(
+    background:linear-gradient(
         135deg,
         #e85d91,
         #a84c9c
     );
 
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
 
-    cursor: pointer;
+    cursor:pointer;
 
     box-shadow:
         0 10px 30px rgba(220,80,140,.35);
 
-    transition: .3s;
+    transition:.3s;
 }
 
-button:hover {
-    transform: translateY(-4px) scale(1.04);
+button:hover{
+    transform:translateY(-4px) scale(1.04);
 }
 
 /* MESSAGE */
 
-.message {
-    display: none;
-    margin-top: 25px;
-
-    padding: 25px;
-
-    border-radius: 20px;
-
-    background: rgba(255,255,255,.12);
-
-    line-height: 1.8;
-
-    animation: messageIn .8s ease;
+.message{
+    display:none;
+    margin-top:25px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.12);
+    line-height:1.8;
+    animation:messageIn .8s ease;
 }
 
-.message.show {
-    display: block;
+.message.show{
+    display:block;
 }
 
-@keyframes messageIn {
-    from {
-        opacity: 0;
-        transform: scale(.8);
+@keyframes messageIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
     }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
+    to{
+        opacity:1;
+        transform:scale(1);
     }
 }
 
-.message h2 {
-    margin-bottom: 12px;
-    color: #ffd6e7;
-    font-family: Georgia, serif;
+.message h2{
+    margin-bottom:12px;
+    color:#ffd6e7;
+    font-family:Georgia,serif;
+}
+
+/* MUSIC STATUS */
+
+.music-status{
+    margin-top:18px;
+    font-size:13px;
+    color:#dcdcff;
+    opacity:.8;
 }
 
 /* FLOATING HEARTS */
 
-.heart {
-    position: fixed;
-    bottom: -30px;
-    pointer-events: none;
-    animation: rise linear forwards;
+.heart{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    animation:rise linear forwards;
 }
 
-@keyframes rise {
-    0% {
-        opacity: 0;
-        transform: translateY(0) rotate(0);
+@keyframes rise{
+    0%{
+        opacity:0;
+        transform:translateY(0) rotate(0);
     }
 
-    15% {
-        opacity: 1;
+    15%{
+        opacity:1;
     }
 
-    100% {
-        opacity: 0;
-        transform: translateY(-110vh) rotate(360deg);
+    100%{
+        opacity:0;
+        transform:translateY(-110vh) rotate(360deg);
     }
 }
 
 /* MOBILE */
 
-@media(max-width:600px) {
+@media(max-width:600px){
 
-    .moon {
-        width: 65px;
-        height: 65px;
-        top: 7%;
-        right: 8%;
+    .moon{
+        width:65px;
+        height:65px;
+        top:7%;
+        right:8%;
     }
 
-    .moon::after {
-        width: 65px;
-        height: 65px;
+    .moon::after{
+        width:65px;
+        height:65px;
     }
 
-    .card {
-        padding: 35px 20px;
+    .card{
+        padding:35px 20px;
     }
 
-    .moon-icon {
-        font-size: 60px;
+    .moon-icon{
+        font-size:60px;
     }
 
-    .subtitle {
-        font-size: 16px;
+    .subtitle{
+        font-size:16px;
     }
 }
 </style>
@@ -273,9 +276,24 @@ button:hover {
 
 <body>
 
+<!-- STARS -->
 <div class="stars" id="stars"></div>
 
+<!-- MOON -->
 <div class="moon"></div>
+
+
+<!-- MUSIC
+     Make sure song.mp3 is in the SAME
+     GitHub folder as this HTML file.
+-->
+<audio
+    id="bgMusic"
+    src="song.mp3"
+    preload="auto"
+    loop>
+</audio>
+
 
 <div class="card">
 
@@ -288,8 +306,8 @@ button:hover {
     </h1>
 
     <p class="subtitle">
-        Before you go to sleep,  
-        I just wanted to leave you  
+        Before you go to sleep,
+        I just wanted to leave you
         a little message. ✨
     </p>
 
@@ -320,22 +338,31 @@ button:hover {
         </p>
 
         <p>
-            — Carl
+            — Carl ❤️
         </p>
 
     </div>
 
+    <div class="music-status" id="musicStatus">
+        🎵 Music loading...
+    </div>
+
 </div>
+
 
 <script>
 
-/* CREATE STARS */
+/* =====================================
+   CREATE STARS
+   ===================================== */
 
-const stars = document.getElementById("stars");
+const stars =
+    document.getElementById("stars");
 
 for(let i = 0; i < 100; i++){
 
-    const star = document.createElement("div");
+    const star =
+        document.createElement("div");
 
     star.className = "star";
 
@@ -348,14 +375,88 @@ for(let i = 0; i < 100; i++){
     star.style.animationDelay =
         Math.random() * 2 + "s";
 
-    star.style.opacity =
-        Math.random();
-
     stars.appendChild(star);
 }
 
 
-/* OPEN MESSAGE */
+/* =====================================
+   MUSIC
+   ===================================== */
+
+const music =
+    document.getElementById("bgMusic");
+
+const musicStatus =
+    document.getElementById("musicStatus");
+
+
+/*
+   Try to start music immediately.
+
+   Some browsers will allow this.
+   Others will block autoplay with sound.
+*/
+window.addEventListener("load", function(){
+
+    music.volume = 0.65;
+
+    const attempt =
+        music.play();
+
+    if(attempt !== undefined){
+
+        attempt
+            .then(function(){
+
+                musicStatus.textContent =
+                    "🎵 Playing softly for you ❤️";
+
+            })
+            .catch(function(){
+
+                musicStatus.textContent =
+                    "🎵 Tap the button to start the music";
+
+            });
+
+    }
+
+});
+
+
+/*
+   If autoplay was blocked,
+   the first interaction starts it.
+*/
+
+function startMusic(){
+
+    if(music.paused){
+
+        music.volume = 0.65;
+
+        music.play()
+            .then(function(){
+
+                musicStatus.textContent =
+                    "🎵 Playing softly for you ❤️";
+
+            })
+            .catch(function(){
+
+                musicStatus.textContent =
+                    "🎵 Music could not be played";
+
+            });
+
+    }
+
+}
+
+
+/* =====================================
+   OPEN MESSAGE
+   ===================================== */
 
 const button =
     document.getElementById("openBtn");
@@ -363,19 +464,27 @@ const button =
 const message =
     document.getElementById("message");
 
-button.addEventListener("click", () => {
 
+button.addEventListener("click", function(){
+
+    /* Start music if autoplay was blocked */
+    startMusic();
+
+    /* Show message */
     message.classList.add("show");
 
     button.textContent =
         "Goodnight Chan 🌙❤️";
 
+    /* Create hearts */
     createHearts();
 
 });
 
 
-/* FLOATING HEARTS */
+/* =====================================
+   FLOATING HEARTS
+   ===================================== */
 
 function createHeart(){
 
@@ -395,7 +504,8 @@ function createHeart(){
     heart.textContent =
         symbols[
             Math.floor(
-                Math.random() * symbols.length
+                Math.random() *
+                symbols.length
             )
         ];
 
@@ -410,9 +520,12 @@ function createHeart(){
 
     document.body.appendChild(heart);
 
-    setTimeout(() => {
+    setTimeout(function(){
+
         heart.remove();
-    }, 10000);
+
+    },10000);
+
 }
 
 
@@ -426,12 +539,16 @@ function createHearts(){
         );
 
     }
+
 }
 
 
-/* CONTINUOUS SMALL HEARTS */
+/* CONTINUOUS HEARTS */
 
-setInterval(createHeart, 1200);
+setInterval(
+    createHeart,
+    1500
+);
 
 </script>
 
